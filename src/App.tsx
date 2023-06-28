@@ -1,9 +1,9 @@
 import "./App.css";
 
 // import { Button } from "./components/Button/button";
-import { IconButton } from "../components/IconButton/button";
-import { Block } from "../components/Block/index";
-import { Title } from "../components/Title/index";
+// import { IconButton } from "../components/IconButton/button";
+import { Block } from "./components/Block/index";
+import { Title } from "./components/Title/index";
 
 import {
   List,
