@@ -1,0 +1,60 @@
+@import "../../index.css";
+
+.block {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1rem;
+
+  aspect-ratio: 1/1;
+
+  cursor: pointer;
+}
+
+.block-number {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.experience {
+  background-color: rgba(243, 46, 63);
+  color: rgba(var(--violet-50));
+}
+
+.projects {
+  background-color: rgba(252, 162, 25);
+  color: rgba(var(--violet-750));
+}
+
+.clients {
+  background-color: rgba(var(--blue-500));
+  color: rgba(var(--violet-50));
+}
+
+.experience,
+.projects,
+.clients {
+  transition: all 0.5s ease;
+}
+
+.experience:hover {
+  background-color: rgba(223, 26, 43);
+  color: rgba(var(--violet-150));
+  box-shadow: 0 0 4px 1px rgba(var(--blue-150), 0.0625);
+}
+
+.projects:hover {
+  background-color: rgba(222, 132, 0);
+  color: rgba(var(--dark-850));
+  box-shadow: 0 0 4px 1px rgba(var(--blue-150), 0.0625);
+}
+
+.clients:hover {
+  background-color: rgba(var(--blue-700));
+  color: rgba(var(--violet-150));
+  box-shadow: 0 0 4px 1px rgba(var(--blue-150), 0.0625);
+}

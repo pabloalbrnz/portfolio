@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
+
+:root {
+  --violet-50: 250, 245, 255;
+  --violet-150: 224, 194, 255;
+  --violet-500: 140, 20, 251;
+  --violet-800: 84, 2, 161;
+
+  --blue-150: 224, 210, 254;
+  --blue-500: 84, 7, 250;
+  --blue-700: 59, 4, 180;
+
+  --dark-600: 92, 83, 101;
+  --dark-750: 61, 55, 67;
+  --dark-850: 38, 34, 42;
+  --dark-950: 20, 18, 23;
+
+  --font-primary: "Belaoosima", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+body {
+  background-color: rgba(var(--dark-950));
+}
+
+.wrapper {
+  padding: 2rem;
+
+  border-radius: 1rem;
+
+  background-color: rgba(var(--dark-850));
+}
