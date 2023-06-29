@@ -4,13 +4,14 @@ import "./App.css";
 // import { IconButton } from "../components/IconButton/button";
 import { Block } from "./components/Block/index";
 import { Title } from "./components/Title/index";
+import { ProjectThumb } from "./components/ProjectThumb/index";
 
 import {
   List,
   LinkedinLogo,
   GithubLogo,
   DiscordLogo,
-  InstagramLogo,
+  BehanceLogo,
   Envelope,
   Phone,
 } from "@phosphor-icons/react";
@@ -21,7 +22,7 @@ function App() {
       <div className="app-container">
         <div className="up-containers">
           <div className="up-left-container">
-            <Title text="Bringing your toughts to reality" />
+            <Title text="UI and Graphic Designer" />
             <div className="grid-container">
               <Block name="experience" number="2+" text="Years experience" />
               <Block name="projects" number="3+" text="Projects handled" />
@@ -61,9 +62,9 @@ function App() {
                   <GithubLogo weight="fill" />
                 </div>
               </a>
-              <a href="https://instagram.com/pabloalbrnz" target="_blank">
+              <a href="https://behance.com/pulseim" target="_blank">
                 <div className="about-icon">
-                  <InstagramLogo weight="fill" />
+                  <BehanceLogo weight="fill" />
                 </div>
               </a>
               <a href="mailto:pabloalbernazrincon@gmail.com" target="_blank">
@@ -82,6 +83,35 @@ function App() {
               <div className="about-icon">
                 <DiscordLogo weight="fill" />
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="down-containers">
+          <div className="down-left-container">
+            <div className="projects-header">
+              <span className="projects-title">My projects</span>
+              <a href="#">
+                <span className="projects-more">See More</span>
+              </a>
+            </div>
+            <div className="projects-grid">
+              <ProjectThumb
+                imageURL="https://cdn.discordapp.com/attachments/834602259425525820/1123815082430824468/Default_Red.png"
+                alt="Magix Thumb"
+                linkURL="https://www.behance.net/gallery/170147533/Magix-Kids-Brand-Redesign"
+              />
+              <ProjectThumb
+                imageURL="https://i.imgur.com/BRfB9Yl.png"
+                alt="Aurora-v2"
+                linkURL="https://pabloalbrnz.github.io/Aurora-v2"
+              />
+              <ProjectThumb
+                imageURL="https://downloadr2.apkmirror.com/wp-content/uploads/2023/05/19/64744328198be.png"
+                alt="MyAnimeList"
+                linkURL="https://github.com/Paulo-Augusto12/anime-project"
+              />
+              <ProjectThumb />
+              <ProjectThumb />
             </div>
           </div>
         </div>

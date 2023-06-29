@@ -1,0 +1,41 @@
+@import "../../index.css";
+
+.project-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  aspect-ratio: 1/1;
+
+  background-color: rgba(var(--dark-600));
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+
+  opacity: 0.75;
+}
+
+.project-thumb,
+.project-thumb img {
+  transition: all 0.5s ease;
+}
+
+.project-thumb img {
+  width: 15rem;
+}
+
+.project-thumb:hover {
+  background-color: rgba(var(--dark-750));
+}
+
+.project-thumb:hover img {
+  filter: brightness(0.8);
+}
+
+.colorful {
+  background-color: rgba(var(--blue-500));
+}
+
+.colorful:hover {
+  background-color: rgba(var(--blue-700));
+}

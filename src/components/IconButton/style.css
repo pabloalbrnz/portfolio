@@ -19,9 +19,7 @@
 .icon-button-sm:focus,
 .icon-button-md:focus,
 .icon-button-lg:focus {
-  outline: none;
-  border: 2px solid rgba(var(--blue-500));
-  box-shadow: 0 0 2px 1px rgba(var(--blue-500));
+  outline: 2px solid rgba(var(--blue-500));
 }
 
 .icon-button-primary,
