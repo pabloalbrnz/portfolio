@@ -74,7 +74,7 @@
 .me-picture img,
 .about-icon,
 .projects-more,
-.ig-header-heart {
+.comming-soon {
   transition: all 0.5s ease;
 }
 
@@ -127,7 +127,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
 
   padding: 1rem 1.5rem;
 
@@ -237,42 +236,28 @@ a:visited {
 
 .down-right-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 
   background-color: rgba(var(--dark-850));
+  color: rgba(var(--violet-50));
 
   border-radius: 1rem;
-}
-
-.ig-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 1rem 1.5rem;
-
-  color: rgba(var(--violet-50));
-}
-
-.ig-title {
-  display: flex;
-  align-items: center;
-
-  gap: 1rem;
 
   font-size: 1.25rem;
 }
 
-.ig-header-heart {
-  border-radius: 0.125rem;
+.comming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  cursor: pointer;
+  gap: 1rem;
 }
 
-.ig-header-heart:hover {
-  color: rgba(var(--violet-500));
+.comming-soon svg {
+  font-size: 2rem;
 }
 
-.ig-header-heart:active {
-  color: rgba(var(--violet-800));
+.comming-soon:hover {
+  color: rgba(var(--dark-600));
 }

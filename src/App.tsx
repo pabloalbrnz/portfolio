@@ -5,9 +5,6 @@ import "./App.css";
 import { Block } from "./components/Block/index";
 import { Title } from "./components/Title/index";
 import { ProjectThumb } from "./components/ProjectThumb/index";
-import { Instagram } from "./components/Instagram/index";
-
-import { useState } from "react";
 
 import {
   List,
@@ -19,21 +16,11 @@ import {
   Envelope,
   PenNib,
   Phone,
-  Heart,
+  TwitchLogo,
+  ClockCountdown,
 } from "@phosphor-icons/react";
 
 function App() {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  const heartWeight = isHovered ? "fill" : "bold";
   return (
     <>
       <div className="app-container">
@@ -97,9 +84,21 @@ function App() {
                   <Phone weight="fill" />
                 </div>
               </a>
-              <div className="about-icon">
-                <DiscordLogo weight="fill" />
-              </div>
+              <a href="https://discord.com/invite/ErJHvmG99p" target="_blank">
+                <div className="about-icon">
+                  <DiscordLogo weight="fill" />
+                </div>
+              </a>
+              <a href="https://twitch.tv/pulseim" target="_blank">
+                <div className="about-icon">
+                  <TwitchLogo weight="fill" />
+                </div>
+              </a>
+              <a href="https://instagram.com/pabloalbrnz" target="_blank">
+                <div className="about-icon">
+                  <InstagramLogo weight="fill" />
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -138,21 +137,10 @@ function App() {
             </div>
           </div>
           <div className="down-right-container">
-            <div className="ig-header">
-              <div className="ig-title">
-                <InstagramLogo weight="fill" />
-                <span>Instagram</span>
-              </div>
-              <a href="https://instagram.com/pabloalbrnz" target="_blank">
-                <Heart
-                  weight={heartWeight}
-                  className="ig-header-heart"
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              </a>
+            <div className="comming-soon">
+              <ClockCountdown weight="fill" />
+              <span>Coming Soon!</span>
             </div>
-            <Instagram />
           </div>
         </div>
       </div>
