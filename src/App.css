@@ -72,7 +72,8 @@
 
 .me-picture,
 .me-picture img,
-.about-icon {
+.about-icon,
+.projects-more {
   transition: all 0.5s ease;
 }
 
@@ -210,8 +211,14 @@ a:visited {
   font-weight: 600;
 
   text-decoration: underline;
-
+  
   color: rgba(var(--dark-600));
+}
+
+.projects-more:hover {
+  text-decoration: none;
+
+  color: rgba(var(--violet-150));
 }
 
 .projects-grid {

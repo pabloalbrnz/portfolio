@@ -35,3 +35,7 @@ body {
 
   background-color: rgba(var(--dark-850));
 }
+
+a {
+  text-decoration: none;
+}
