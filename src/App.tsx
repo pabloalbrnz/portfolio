@@ -5,18 +5,35 @@ import "./App.css";
 import { Block } from "./components/Block/index";
 import { Title } from "./components/Title/index";
 import { ProjectThumb } from "./components/ProjectThumb/index";
+import { Instagram } from "./components/Instagram/index";
+
+import { useState } from "react";
 
 import {
   List,
   LinkedinLogo,
   GithubLogo,
+  InstagramLogo,
   DiscordLogo,
   BehanceLogo,
   Envelope,
+  PenNib,
   Phone,
+  Heart,
 } from "@phosphor-icons/react";
 
 function App() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const heartWeight = isHovered ? "fill" : "bold";
   return (
     <>
       <div className="app-container">
@@ -89,7 +106,10 @@ function App() {
         <div className="down-containers">
           <div className="down-left-container">
             <div className="projects-header">
-              <span className="projects-title">My projects</span>
+              <div className="projects-title">
+                <PenNib weight="fill" />
+                <span>My projects</span>
+              </div>
               <a href="#">
                 <span className="projects-more">See More</span>
               </a>
@@ -116,6 +136,23 @@ function App() {
               />
               <ProjectThumb />
             </div>
+          </div>
+          <div className="down-right-container">
+            <div className="ig-header">
+              <div className="ig-title">
+                <InstagramLogo weight="fill" />
+                <span>Instagram</span>
+              </div>
+              <a href="https://instagram.com/pabloalbrnz" target="_blank">
+                <Heart
+                  weight={heartWeight}
+                  className="ig-header-heart"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </a>
+            </div>
+            <Instagram />
           </div>
         </div>
       </div>

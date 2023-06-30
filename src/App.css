@@ -73,7 +73,8 @@
 .me-picture,
 .me-picture img,
 .about-icon,
-.projects-more {
+.projects-more,
+.ig-header-heart {
   transition: all 0.5s ease;
 }
 
@@ -202,6 +203,11 @@ a:visited {
 }
 
 .projects-title {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
   font-size: 1.25rem;
 
   color: rgba(var(--violet-50));
@@ -211,7 +217,7 @@ a:visited {
   font-weight: 600;
 
   text-decoration: underline;
-  
+
   color: rgba(var(--dark-600));
 }
 
@@ -227,4 +233,46 @@ a:visited {
   gap: 0.5rem;
 
   padding: 1rem 1.5rem;
+}
+
+.down-right-container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(var(--dark-850));
+
+  border-radius: 1rem;
+}
+
+.ig-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 1.5rem;
+
+  color: rgba(var(--violet-50));
+}
+
+.ig-title {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  font-size: 1.25rem;
+}
+
+.ig-header-heart {
+  border-radius: 0.125rem;
+
+  cursor: pointer;
+}
+
+.ig-header-heart:hover {
+  color: rgba(var(--violet-500));
+}
+
+.ig-header-heart:active {
+  color: rgba(var(--violet-800));
 }

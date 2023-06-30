@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap");
 
 :root {
   --violet-50: 250, 245, 255;
@@ -15,7 +15,7 @@
   --dark-850: 38, 34, 42;
   --dark-950: 20, 18, 23;
 
-  --font-primary: "Belaoosima", sans-serif;
+  --font-primary: "Lato", sans-serif;
 }
 
 * {
