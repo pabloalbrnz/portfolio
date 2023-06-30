@@ -22,6 +22,17 @@
   padding: 0;
   margin: 0;
   font-family: var(--font-primary);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+::-moz-selection {
+  background-color: rgba(var(--blue-500));
+}
+
+::selection {
+  background-color: rgba(var(--blue-500));
 }
 
 body {
