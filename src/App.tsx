@@ -110,7 +110,10 @@ function App() {
                 alt="MyAnimeList"
                 linkURL="https://github.com/Paulo-Augusto12/anime-project"
               />
-              <ProjectThumb />
+              <ProjectThumb
+                imageURL="https://i.imgur.com/4qy9ota.png"
+                alt="Rocketship Logo"
+              />
               <ProjectThumb />
             </div>
           </div>
