@@ -1,5 +1,3 @@
-@import "../../index.css";
-
 .block {
   display: flex;
   flex-direction: column;

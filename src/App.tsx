@@ -24,7 +24,11 @@ import {
   ClockCountdown,
 } from "@phosphor-icons/react";
 
+import { useNavigate } from "react-router-dom";
+
 function App() {
+  const navigate = useNavigate();
+
   const [isDark, setIsDark] = useState(true);
   const [isEnglish, setIsEnglish] = useState(true);
 
@@ -174,17 +178,18 @@ function App() {
                 <PenNib weight="fill" />
                 <span>{isEnglish ? "My Projects" : "Meus projetos"}</span>
               </div>
-              <a href="#">
-                <span className="projects-more">
-                  {isEnglish ? "See more" : "Mais"}
-                </span>
-              </a>
+              <button
+                onClick={() => navigate("/portfolio/projects")}
+                className="projects-more"
+              >
+                {isEnglish ? "See more" : "Mais"}
+              </button>
             </div>
             <div className="projects-grid">
               <ProjectThumb
                 imageURL="https://cdn.discordapp.com/attachments/834602259425525820/1123815082430824468/Default_Red.png"
                 alt="Magix Thumb"
-                linkURL="https://www.behance.net/gallery/170147533/Magix-Kids-Brand-Redesign"
+                linkURL="/portfolio/projects#magix"
               />
               <ProjectThumb
                 imageURL="https://i.imgur.com/BRfB9Yl.png"
@@ -199,6 +204,7 @@ function App() {
               <ProjectThumb
                 imageURL="https://i.imgur.com/4qy9ota.png"
                 alt="Rocketship Logo"
+                linkURL="portfolio/projects#rocketshipLogo"
               />
               <ProjectThumb />
             </div>

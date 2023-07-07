@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": "magix",
+      "name": "Magix Kids",
+      "images": [
+        "default_red.png",
+        "default_yellow.png",
+        "default_blue.png",
+        "default_white.png",
+        "pb_black.png",
+        "pb_white.png"
+      ],
+      "category": ["idv", "graphic", "logo", "branding"],
+      "tools": ["Photoshop", "Illustrator"]
+    },
+    {
+      "id": "rocketshipLogo",
+      "name": "Rocketship Logo Challenge",
+      "images": ["default.png", "dark.png", "alt.png", "alt_dark.png"],
+      "category": ["idv", "graphic", "logo", "branding"],
+      "tools": ["Photoshop", "Illustrator"]
+    }
+  ]
+}
