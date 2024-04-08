@@ -1,4 +1,5 @@
 import { PiMoonFill } from "react-icons/pi";
+import me from "./assets/pablo.png";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
           <div className="rounded w-52 bg-neutral-300 border border-neutral-800 hover:border-transparent h-80 flex overflow-hidden group/me noise hover:bg-purple-500 transition-colors ease-linear">
             <img
               alt="Pablo photo"
-              src="/pablo.png"
+              src={me}
               className="h-72 self-end grayscale group-hover/me:grayscale-0 ease-linear drop-shadow-[0_0_12px_rgba(20,15,25,0.1)] group-hover/me:drop-shadow-[0_0_12px_rgba(200,155,255)] transition-[filter,transform] group-hover/me:rotate-[2deg] group-hover/me:scale-110 select-none"
             />
           </div>
