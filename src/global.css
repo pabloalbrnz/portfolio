@@ -8,14 +8,23 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 
 body {
   background-color: theme(colors.neutral.100);
 }
 
-.noise {
-  background-image: url("assets/noise.png");
+.noise-dark {
+  background-image: url("assets/noise-dark.png");
+}
+
+.noise-light {
+  background-image: url("assets/noise-light.png");
 }
 
 ::-moz-selection {
@@ -26,4 +35,21 @@ body {
 ::selection {
   color: theme(colors.neutral.800);
   background: theme(colors.purple.500);
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+span,
+h1,
+h2,
+h3,
+h4 {
+  cursor: default;
 }
