@@ -127,7 +127,7 @@ function App() {
                 </b>{" "}
                 journey.
               </span>
-              <div className="xs:pt-12 xs:-ml-[7.75rem]">
+              <div className="xs:pt-12 xs:-ml-[7.75rem] lg:pt-0 lg:ml-0">
                 <span className="absolute text-3xl -hue-rotate-[67.5deg] brightness-75 lg:-mt-4 lg:ml-48 xs:-mt-5 xs:ml-60 rotate-[12deg] hover:-rotate-6 ease-linear transition-all hover:drop-shadow-[0px_4px_8px_rgba(100,55,155,0.25)]">
                   ✌️
                 </span>
@@ -154,7 +154,7 @@ function App() {
         </footer>
       </div>
       <div
-        className="min-h-screen w-full bg-neutral-800 noise-dark px-20 py-12 flex flex-col gap-12"
+        className="lg:min-h-screen xs:h-fit w-full bg-neutral-800 noise-dark px-20 py-12 flex flex-col gap-12"
         id="projects"
       >
         <span className="w-full uppercase text-center font-stretch text-neutral-200 lg:text-lg xs:text-sm">
