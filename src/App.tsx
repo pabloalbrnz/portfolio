@@ -64,7 +64,7 @@ function App() {
               <div className="w-1/2 flex justify-end">
                 <a href="/">
                   <li className="p-2 rounded-lg">
-                    {screenWidth <= 320 ? <PiHouseFill size={24} /> : "Home"}
+                    {screenWidth <= 768 ? <PiHouseFill size={24} /> : "Home"}
                   </li>
                 </a>
               </div>
@@ -72,7 +72,7 @@ function App() {
               <div className="w-1/2 flex justify-start">
                 <a href="#projects">
                   <li className="p-2 rounded-lg">
-                    {screenWidth <= 320 ? (
+                    {screenWidth <= 768 ? (
                       <PiPaintBrushBroadFill size={24} />
                     ) : (
                       "Projects"
@@ -94,7 +94,7 @@ function App() {
           <div className="w-full bg-neutral-800 h-px" />
         </header>
         <section className="w-full flex flex-col gap-8 justify-center lg:px-24 xs:px-0">
-          <div className="flex lg:gap-4 xs:gap-2">
+          <div className="flex lg:gap-4 xs:gap-2 justify-center">
             <div className="rounded hover:rounded-md lg:min-w-52 lg:max-w-52 xs:min-w-28 xs:max-w-28 bg-neutral-300 border border-neutral-800 hover:border-transparent lg:h-80 xs:h-48 flex overflow-hidden group/me noise-light hover:bg-purple-500 transition-all shadow shadow-transparent hover:shadow-2xl hover:shadow-purple-400 ease-linear">
               <img
                 alt="Pablo photo"
