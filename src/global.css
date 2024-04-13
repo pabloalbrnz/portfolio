@@ -46,7 +46,25 @@ body {
   display: none;
 }
 
-* {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.scroll-visible::-webkit-scrollbar {
+  display: flex;
+  width: 0;
+  height: 8px;
+}
+
+.scroll-visible::-webkit-scrollbar-track {
+  background: theme(colors.neutral.700);
+  border-radius: 2px;
+  background-image: url("./assets/noise-dark.png");
+}
+
+.scroll-visible::-webkit-scrollbar-thumb {
+  background: theme(colors.purple.600);
+  border-radius: 2px;
+  background-image: url("./assets/noise-dark.png");
+}
+
+.scroll-visible::-webkit-scrollbar-thumb:hover {
+  background: theme(colors.purple.800);
+  background-image: url("./assets/noise-dark.png");
 }
