@@ -50,11 +50,3 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-span,
-h1,
-h2,
-h3,
-h4 {
-  cursor: default;
-}

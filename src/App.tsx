@@ -77,12 +77,15 @@ function App() {
         </header>
         <section className="w-full flex flex-col gap-8 justify-center px-24">
           <div className="flex gap-4">
-            <div className="rounded hover:rounded-md w-52 bg-neutral-300 border border-neutral-800 hover:border-transparent h-80 flex overflow-hidden group/me noise-light hover:bg-purple-500 transition-all  shadow shadow-transparent hover:shadow-2xl hover:shadow-purple-400 ease-linear">
+            <div className="rounded hover:rounded-md min-w-52 max-w-52 bg-neutral-300 border border-neutral-800 hover:border-transparent h-80 flex overflow-hidden group/me noise-light hover:bg-purple-500 transition-all shadow shadow-transparent hover:shadow-2xl hover:shadow-purple-400 ease-linear">
               <img
                 alt="Pablo photo"
                 src={me}
                 className="h-72 self-end grayscale group-hover/me:grayscale-0 ease-linear drop-shadow-[0_0_12px_rgba(20,15,25,0.1)] group-hover/me:drop-shadow-[0_0_12px_rgba(200,155,255)] transition-all group-hover/me:rotate-[2deg] group-hover/me:scale-110"
               />
+              <span className="absolute text-3xl -hue-rotate-[67.5deg] brightness-75 mt-48 ml-[11.25rem] -rotate-[128deg] hover:-rotate-[102deg] ease-linear transition-transform">
+                🤙
+              </span>
             </div>
             <div className="flex flex-col gap-8 text-neutral-800">
               <h2 className="font-stretch uppercase text-3xl">
@@ -106,12 +109,17 @@ function App() {
                 </b>{" "}
                 journey.
               </span>
-              <button className="flex gap-4 w-fit font-stretch uppercase py-2 pl-8 pr-12 ml-1 bg-neutral-300 rounded hover:rounded-md border border-neutral-800 hover:border-transparent hover:bg-purple-500 noise-light hover:text-neutral-200 ease-linear transition-all shadow shadow-transparent hover:shadow-xl hover:shadow-purple-300 group/hire">
-                Hire me{" "}
-                <span className="-hue-rotate-[67.5deg] brightness-75 group-hover/hire:hue-rotate-0 group-hover/hire:brightness-100 ease-linear transition-all">
-                  ✨
+              <div>
+                <span className="absolute text-3xl -hue-rotate-[67.5deg] brightness-75 -mt-4 ml-48 rotate-[12deg] hover:-rotate-6 ease-linear transition-all hover:drop-shadow-[0px_4px_8px_rgba(100,55,155,0.25)]">
+                  ✌️
                 </span>
-              </button>{" "}
+                <button className="flex gap-4 w-fit font-stretch uppercase py-2 pl-8 pr-12 ml-1 bg-neutral-300 rounded hover:rounded-md border border-neutral-800 hover:border-transparent hover:bg-purple-500 noise-light hover:text-neutral-200 ease-linear transition-all shadow shadow-transparent hover:shadow-xl hover:shadow-purple-300 group/hire">
+                  Hire me{" "}
+                  <span className="-hue-rotate-[67.5deg] brightness-75 group-hover/hire:hue-rotate-0 group-hover/hire:brightness-100 ease-linear transition-all">
+                    ✨
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -166,7 +174,7 @@ function App() {
         </div>
       </div>
       <div className="fixed -z-10 noise-dark size-full opacity-25" />
-      <span className="absolute leading-4 font-source text-2xl rotate-6 opacity-10 top-80 left-[64rem] text-center blur-[0.25px]">
+      <span className="absolute leading-4 font-source text-2xl rotate-6 opacity-10 top-[47%] left-[75%] text-center blur-[0.25px]">
         xxxxxxxxxx
         <br />
         xxxxxxxxxxxx
@@ -188,7 +196,7 @@ function App() {
         xxxxxxxxxxx
         <br />
       </span>
-      <span className="absolute -z-20 leading-4 font-source text-2xl -rotate-[9deg] opacity-10 top-24 left-40 text-center blur-[0.75px]">
+      <span className="absolute -z-20 leading-4 font-source text-2xl -rotate-[9deg] opacity-10 top-[16%] left-[12%] text-center blur-[0.75px]">
         xxxxxxxxxx
         <br />
         xxxxxxxxxxxx
@@ -210,7 +218,7 @@ function App() {
         xxxxxxxxxxx
         <br />
       </span>
-      <div className="absolute top-96 left-[60rem] flex flex-col gap-1.5 -rotate-6 hover:-rotate-[5deg] ease-linear transition-transform">
+      <div className="absolute top-[56%] left-[70%] flex flex-col gap-1.5 -rotate-6 hover:-rotate-[5deg] ease-linear transition-transform">
         <div className="w-48 h-1 bg-neutral-800 hover:bg-purple-800 ease-linear transition-colors" />
         <div className="w-48 h-1 bg-neutral-800 hover:bg-purple-800 ease-linear transition-colors" />
         <div className="w-48 h-1 bg-neutral-800 hover:bg-purple-800 ease-linear transition-colors" />
@@ -225,7 +233,7 @@ function App() {
         <div className="w-48 h-1 bg-neutral-800 hover:bg-purple-800 ease-linear transition-colors" />
         <div className="w-48 h-1 bg-neutral-800 hover:bg-purple-800 ease-linear transition-colors" />
       </div>
-      <div className="absolute ml-[60rem] mt-32 w-48 drop-shadow-[1px_8px_8px_rgba(0,0,0,0.1)] group/polaroid  hover:drop-shadow-[2px_16px_8px_rgba(200,155,255,0.75)] ease-linear transition-all saturate-[0.38] hover:saturate-[0.8]">
+      <div className="absolute ml-[72%] mt-[10%] w-48 drop-shadow-[1px_8px_8px_rgba(0,0,0,0.1)] group/polaroid hover:drop-shadow-[2px_16px_8px_rgba(200,155,255,0.75)] ease-linear transition-all saturate-[0.38] hover:saturate-[0.8]">
         <img
           src={subway1}
           className="absolute p-2 pb-12 w-48 bg-neutral-200 -rotate-[8deg] blur-[0.75px] hover:blur-[0.25px] group-hover/polaroid:-rotate-[6deg] ease-linear transition-transform"
@@ -238,16 +246,10 @@ function App() {
           life is good
         </span>
       </div>
-      <PiStarFourFill className="absolute top-36 left-20 text-6xl rotate-[28deg] text-neutral-800 hover:rotate-[12deg] ease-linear transition-[transform]" />
-      <PiStarFourFill className="absolute top-96 left-[52rem] text-4xl rotate-[48deg] text-neutral-800 hover:-rotate-[24deg] ease-linear transition-[transform]" />
-      <PiStarFourFill className="absolute top-[30rem] left-48 text-xl rotate-[8deg] text-purple-500 hover:-rotate-[90deg] ease-linear transition-[transform]" />
-      <PiStarFourFill className="absolute top-28 left-[56rem] text-2xl text-purple-500 hover:animate-spin ease-linear transition-[transform]" />
-      <span className="absolute text-3xl -hue-rotate-[67.5deg] brightness-75 top-[22rem] rotate-[12deg] hover:-rotate-6 ease-linear transition-transform">
-        ✌️
-      </span>
-      <span className="absolute text-3xl -hue-rotate-[67.5deg] brightness-75 top-[28rem] left-[25.6rem] -rotate-[128deg] hover:-rotate-[102deg] ease-linear transition-transform">
-        🤙
-      </span>
+      <PiStarFourFill className="absolute top-[24%] left-[5%] text-6xl rotate-[28deg] text-neutral-800 hover:rotate-[12deg] ease-linear transition-[transform]" />
+      <PiStarFourFill className="absolute top-[56%] left-[62%] text-4xl rotate-[48deg] text-neutral-800 hover:-rotate-[24deg] ease-linear transition-[transform]" />
+      <PiStarFourFill className="absolute top-[70%] left-[14%] text-xl rotate-[8deg] text-purple-500 hover:-rotate-[90deg] ease-linear transition-[transform]" />
+      <PiStarFourFill className="absolute top-[16%] left-[66%] text-2xl text-purple-500 hover:animate-spin ease-linear transition-[transform]" />
     </div>
   );
 }
