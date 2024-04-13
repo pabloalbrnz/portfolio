@@ -94,7 +94,7 @@ function App() {
           <div className="w-full bg-neutral-800 h-px" />
         </header>
         <section className="w-full flex flex-col gap-8 justify-center lg:px-24 xs:px-0">
-          <div className="flex lg:gap-4 xs:gap-2 justify-center">
+          <div className="flex lg:gap-4 xs:gap-2 xs:justify-center lg:justify-start">
             <div className="rounded hover:rounded-md lg:min-w-52 lg:max-w-52 xs:min-w-28 xs:max-w-28 bg-neutral-300 border border-neutral-800 hover:border-transparent lg:h-80 xs:h-48 flex overflow-hidden group/me noise-light hover:bg-purple-500 transition-all shadow shadow-transparent hover:shadow-2xl hover:shadow-purple-400 ease-linear">
               <img
                 alt="Pablo photo"
@@ -112,11 +112,11 @@ function App() {
                 {randomName[2]}
               </h2>
               <span className="font-source lg:ml-1 xs:ml-0.5 xs:text-xs lg:text-base">
-                Hello World!
+                Hello World!{" "}
                 <span className="lg:text-2xl xs:text-base -hue-rotate-[67.5deg] brightness-75">
                   👋
-                </span>{" "}
-                I am a{" "}
+                </span>
+                <br />I am a{" "}
                 <i>
                   <b>Web, UI/UX and Graphic Designer.</b>
                 </i>
